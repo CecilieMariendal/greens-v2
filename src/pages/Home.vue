@@ -3,6 +3,8 @@
     <h1>Home</h1>
   </nav>
 
+  <create-form></create-form>
+
   <router-link to="/recipe/test">Recipe Test</router-link>
   <router-link to="/account">My Account</router-link>
   <!-- 
@@ -11,14 +13,16 @@
       All my recipes
       Search funtionality
    -->
-  <ol>
-    
-    
-    
-  </ol>
 </template>
 
-<script setup>
+<script>
+import CreateForm from '../components/CreateForm.vue'
+
+export default {
+  components: {
+    CreateForm,
+  }
+}
 </script>
 
 <style scoped>
